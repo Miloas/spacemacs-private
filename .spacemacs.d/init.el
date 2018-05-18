@@ -77,7 +77,8 @@ This function should only modify configuration layer settings."
    ;; A list of packages that will not be installed and loaded.
    dotspacemacs-excluded-packages '(pangu-spacing
                                     magit-gh-pulls
-                                    ;; spaceline
+                                    smooth-scrolling
+                                    spaceline
                                     holy-mode
                                     skewer-mode
                                     highlight-indentation
@@ -305,7 +306,7 @@ It should only modify the values of Spacemacs settings."
    ;; If non-nil smooth scrolling (native-scrolling) is enabled. Smooth
    ;; scrolling overrides the default behavior of Emacs which recenters point
    ;; when it reaches the top or bottom of the screen. (default t)
-   dotspacemacs-smooth-scrolling t
+   dotspacemacs-smooth-scrolling nil
    ;; Control line numbers activation.
    ;; If set to `t' or `relative' line numbers are turned on in all `prog-mode' and
    ;; `text-mode' derivatives. If set to `relative', line numbers are relative.
@@ -411,14 +412,6 @@ before packages are loaded."
      '((c-mode . treemacs-icon-c)
        (c++-mode . treemacs-icon-cpp))))
   (put 'c-auto-align-backslashes 'safe-local-variable 'booleanp)
-
-
-  (defun spacemacs/enable-smooth-scrolling ()
-    "Enable smooth scrolling."
-    (interactive)
-    (setq scroll-conservatively 30))
-  (spacemacs/enable-smooth-scrolling)
-
   )
 
 ;; Do not write anything past this comment. This is where Emacs will
