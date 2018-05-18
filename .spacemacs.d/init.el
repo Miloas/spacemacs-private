@@ -35,8 +35,7 @@ This function should only modify configuration layer settings."
      ;; Uncomment some layer names and press `SPC f e R' (Vim style) or
      ;; `M-m f e R' (Emacs style) to install them.
      ;; ----------------------------------------------------------------
-     ;; lsp
-     miloas-lsp
+     lsp
      (colors :variables colors-enable-nyan-cat-progress-bar t)
      ;; (go :variables
      ;;     go-use-gometalinter t
@@ -45,7 +44,7 @@ This function should only modify configuration layer settings."
      ;; (python :variables python-backend 'lsp)
      typescript
      javascript
-     miloas-react
+     react
      (c-c++ :variables c-c++-default-mode-for-headers 'c++-mode)
      (miloas-cquery :variables cquery-executable "/Users/miloas/Emacs/cquery/cquery")
      html
